@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>cookie</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js"></script>
+<script type="text/javascript" src="zepto.cookie.js"></script>
+<script>
+  var cookieA = $.fn.cookie('foo', 'bar');
+  var cookieB = $.fn.cookie('foo');
+  var cookieC = $.fn.cookie('foo', null);
+  var cookieD = $.fn.cookie('foo', 'bar', { expires: 7 });
+  console.log(cookieA);
+  console.log(cookieB);
+  console.log(cookieC);
+  console.log(cookieD);
+</script>
+</html>
